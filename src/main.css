@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap");
+
 html {
   font-family: "Catamaran", Courier, monospace;
+  background-image: url("background.webp");
+  background-size: cover;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+}
+
+main {
+  max-width: 1200px;
+  flex-grow: 1;
 }
