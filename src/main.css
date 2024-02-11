@@ -19,6 +19,21 @@ main {
   border-radius: 3px;
   box-shadow: 5px 5px 10px black;
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  padding: 25px;
+  font-size: 16px;
+  min-height: 150px;
+}
+
+@media (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .image.b {
+    display: none;
+  }
 }
 
 a:link {
@@ -43,15 +58,20 @@ a:visited {
   text-shadow: 3px 3px 6px black;
 }
 
-.columns {
-  display: flex;
-  flex-grow: 1;
-  gap: 100px;
-  padding: 25px;
-  font-size: 16px;
+.image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 150px;
 }
-.columns div:nth-child(n) {
-  max-width: 550px;
-  width: 100%;
+
+.image.a {
+  background-position: left;
+  min-height: 300px;
+  background-image: url(helloImage.png);
+}
+
+.image.b {
+  background-position: bottom right;
+  background-image: url(point.png);
 }
