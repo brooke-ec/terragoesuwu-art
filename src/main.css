@@ -5,11 +5,31 @@ body {
   background-size: cover;
 
   font-family: "Catamaran", Courier, monospace;
-  justify-content: center;
+  color: aliceblue;
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 main {
   max-width: 1200px;
   flex-grow: 1;
+  background-color: #414766;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px black;
+  width: 100%;
+}
+
+.pfp {
+  background-image: url(pfp.png);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px black;
+}
+
+.heading {
+  font-size: 50px;
+  text-shadow: 3px 3px 6px black;
 }
